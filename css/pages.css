@@ -14,15 +14,15 @@
 #page-nav{ /*内容导航居中对齐*/
 	margin:20px auto; width:400px; font-size:14px;
 }
+
 .pagination{   
 	display: flex;
   	justify-content: center;
-  	flex-wrap: nowrap; /* Optional: allow wrapping on small screens */
+  	flex-wrap: wrap; /* Optional: allow wrapping on small screens */
   	padding-left: 0;
   	list-style: none;
-	white-space: nowrap;
+	white-space: normal;
 }
-
 
 .current{ /*当前页标签加粗显示*/
 	font-weight:bold; }
