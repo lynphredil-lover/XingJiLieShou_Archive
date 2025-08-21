@@ -37,7 +37,7 @@ string get_file_path() {
                 flag = 1;
                 break;
             case 7:
-                file_path = "html/Cybron.html";
+                file_path = "html/Cyborn.html";
                 flag = 1;
                 break;
             case 8:
