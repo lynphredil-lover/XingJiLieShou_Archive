@@ -6,7 +6,7 @@ using namespace std;
 string get_file_path() {
     string file_path;
     int chac_num, flag=0;
-    cout << "Choose a character: 1.烬行 2.铃弗瑞迪尔 3.斯沃德麦伦 4.谶 5.度漪 6.塔拉撒里昂 7.赛博恩 8.无可奉告哥" << endl;
+    cout << "Choose a character: 1.烬行 2.铃弗瑞迪尔 3.斯沃德麦伦 4.谶 5.度漪 6.塔拉撒里昂 7.赛博恩 8.无可奉告哥 9.服务型机器人" << endl;
     while (flag == 0)
     {    
         cout << "Enter the number: ";
@@ -41,7 +41,11 @@ string get_file_path() {
                 flag = 1;
                 break;
             case 8:
-                file_path = "html/Unknown.html";
+                file_path = "html/Unknown1.html";
+                flag = 1;
+                break;
+            case 9:
+                file_path = "html/Unknown2.html";
                 flag = 1;
                 break;
             case 0:
