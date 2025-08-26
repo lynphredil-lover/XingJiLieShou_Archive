@@ -11,5 +11,5 @@
 [蒲熠星微博](https://m.weibo.cn/u/2882733894?luicode=10000011&lfid=1005055838726144&featurecode=n)
 
 ### 特别感谢
-感谢[啊噗的记忆盒子](https://m.weibo.cn/u/7018704338) 提供不可见的照片与文案
-感谢[瑶瑶的全图鉴计划]提供伴手礼照片(https://www.xiaohongshu.com/user/profile/682874ab0000000008015aca?xsec_token=YBOcME4LxVE7Iuj0inh_AcQ2Fz4mw_P76sGs6QQLmP4NY%3D&xsec_source=app_share&xhsshare=CopyLink&appuid=6374e6af000000001f018fab&apptime=1756194792&share_id=29615fba31b64313b9c3ba5bc09b70ea&share_channel=copy_link)
+感谢[啊噗的记忆盒子](https://m.weibo.cn/u/7018704338) 提供不可见的照片与文案 <br>
+感谢[瑶瑶的全图鉴计划](https://www.xiaohongshu.com/user/profile/682874ab0000000008015aca?xsec_token=YBOcME4LxVE7Iuj0inh_AcQ2Fz4mw_P76sGs6QQLmP4NY%3D&xsec_source=app_share&xhsshare=CopyLink&appuid=6374e6af000000001f018fab&apptime=1756194792&share_id=29615fba31b64313b9c3ba5bc09b70ea&share_channel=copy_link)提供伴手礼照片
