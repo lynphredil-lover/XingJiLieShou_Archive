@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>星际猎手档案</title>
+<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" >
+<script src="./bootstrap/js/jquery-3.4.1.slim.min.js"></script>
+<script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="./bootstrap/js/bootstrap.min.js"></script>
+<script src="./js/pages.js"></script> <!--pages.js中包括必要的Javascript代码-->
+<link rel="stylesheet" href="./css/main.css"> <!--main.css中包括网站通用的CSS代码-->
+<link rel="stylesheet" href="./css/pages.css"> <!--pages.css中包括修饰具体页面用的CSS代码-->
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="../https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<!--header-->
+<body>
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark w3-animate-top">
+        <a class="navbar-brand" href="./main.html"><img class="logo-responsive" src="images/logo/logo.png" alt="logo" height="75px" width="75px"></a> <!--insert logo here-->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar"> <span class="navbar-toggler-icon"></span> </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav">    
+            <li class="nav-item" id="current"><a class="nav-link text-light" href="./main.html">星际猎手档案</a></li>      
+          </ul>
+        </div>
+    </nav>
+
+    <!--poster-->
+    <div class="w3-animate-bottom" >
+        <div id="slides" class="carousel slide" data-ride="carousel">
+            <ul class="carousel-indicators">
+                <li data-target="#slides" data-slide-to="0" class="active"></li>
+                <li data-target="#slides" data-slide-to="1"></li>
+                <li data-target="#slides" data-slide-to="2"></li>
+            </ul>
+            <div class="carousel-inner">
+                <div class="carousel-item active">  <a href="./html/chacracter_intro.html"><img class="d-block w-100" src="./images/main_poster/poster.png" alt="poster"></a>   </div>
+                <div class="carousel-item">  <a href="./html/chacracter_intro.html"><img alt="poster" class="d-block w-100"src="./images/main_poster/intro.png"></a>   </div>
+                <div class="carousel-item">  <a href="./html/chacracter_intro.html"><img alt="poster" class="d-block w-100"src="./images/main_poster/poster_real.png"></a>   </div>
+            </div>
+            <a class="carousel-control-prev" href="#slides" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#slides" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
