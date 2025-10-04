@@ -91,10 +91,21 @@
   </div>
 </div>
 
+<!--main content-->
 <h2 class="title-underline" style="color: #32BF91;">任务记录</h2>
+
+<!--record nevigation bar-->
+<ul id="record-nav">
+	<li style="color:  #32BF91;"> <a href="javascript:void(0)" onclick="JumpTo('LingLan_op.html', 'record-nav')">出场</a></li>
+    
+    <li style="color: #32BF91;"><a id="current" style="background: #ADF0DB;" href="#">文字</a></li>
+    <li style="color:  #32BF91;"><a href="javascript:void(0)" onclick="JumpTo('LingLan_vid.html', 'record-nav')">视频</a></li>
+</ul>
+
+<!--record table-->
 <table class="mission-table">
     <thead>
-        <tr>
+        <tr style="background-color: #ADF0DB;">
             <th>时间 地点</th>
             <th>照片</th>
             <th>内容</th>

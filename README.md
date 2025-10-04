@@ -3,13 +3,20 @@
 1. [点击查看](https://raw.githack.com/lynphredil-lover/XingJiLieShou_Archive/refs/heads/main/main.html) （无需下载）
 2. 将zip file下载至本地后解压，使用浏览器打开main.html（注：每次更新后需重新下载才可观看最新版）
 
-网页已制作完成啦。之前说好的宇宙中心八卦社合集目前在设计方面还没有思路，短期内是不会更新了。目前，除了阿蒲的小作文外估计不会有其他更新了（但我相信阿蒲这个大鸽子下次更新小作文应该是杭州站巡演前）。
-
+宇宙中心八卦社合集已经在制作中了。最近三次生活太忙实在肝不动，就先上传这版吧。如果没意外的话南昌站前能制作完毕，敬请期待！
 如有问题可通过邮箱联络我~ 我的邮箱：leejingyj@gmail.com
+
+### 上次更新
+更新时间：2025.10.04
+更新内容：<br>
+1. 在每个人物页面里增加了出场和视频板块
+2. 微博小作文
 
 ### 资料来源
 - [蒲熠星微博](https://m.weibo.cn/u/2882733894?luicode=10000011&lfid=1005055838726144&featurecode=n)
 - 银河系旅行攻略
+- [蒲熠星抖音](https://www.douyin.com/user/MS4wLjABAAAA0hzPeKe3b9jGy9bp6z49qzGh4pTImbECpr1dBivaI8c)
+- [蒲熠星B站](https://space.bilibili.com/226102317)
 
 
 ### 特别感谢

@@ -91,10 +91,20 @@
   </div>
 </div>
 
+<!--main content-->
 <h2 class="title-underline" style="color: #A6531F;">任务记录</h2>
+
+<!--record nevigation bar-->
+<ul id="record-nav">
+	<li style="color:  #A6531F;"><a href="javascript:void(0)" onclick="JumpTo('SwordMelon_op.html', 'record-nav')">出场</a></li>
+    <li style="color: #A6531F;"><a id="current" style="background: #ecb898;" href="#">文字</a></li>
+    <li style="color:  #A6531F;"><a href="javascript:void(0)" onclick="JumpTo('SwordMelon_vid.html', 'record-nav')">视频</a></li>
+</ul>
+
+<!--record table-->
 <table class="mission-table">
     <thead>
-        <tr>
+        <tr style="background: #ecb898;">
             <th>时间 地点</th>
             <th>照片</th>
             <th>内容</th>
