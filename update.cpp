@@ -1,6 +1,7 @@
 #include <iostream>
 #include <string>
 #include <fstream>
+#include <windows.h>
 using namespace std;
 
 string get_character() {
@@ -67,6 +68,7 @@ struct UpdateContent
     string venue;
     string source;
     string source_link;
+    string title;
 };
 
 UpdateContent get_text_content(){
@@ -178,27 +180,26 @@ int update_type(){
     int flag, choice, type;
     flag = 1;
 
-    cout << "Content type: 1.Opening video  2.Text  3.Video" << endl;
+    cout << "Content type: 1.Opening video  2.Text  3.Video  4.News" << endl;
     while (flag == 1) {
         cout << "Enter the number: "; cin >> choice;
-        switch (choice)
-        {
+        switch (choice) {
         case 1:
-            type = 1;
-            flag = 0;
+            return 1;
             break;
         case 2:
-            type = 2;
-            flag = 0;
+            return 2;
             break;
         case 3:
-            type = 3;
-            flag = 0;
+            return 3;
+            break;
+        case 4:
+            return 4;
             break;
         case 0:
             return 0;
         default:
-            cout << "Invalid input." << endl;
+            cout << "Invalid input. update type" << endl;
             break;
         }
     }
@@ -354,6 +355,117 @@ int vid_update() {
 
 }
 
+UpdateContent gets_news_content_img(){
+    UpdateContent new_content;
+    string img_name;
+    int num;
+
+    cout << "Enter date(yyyy.mm.dd): "; cin >> new_content.date;
+    cout << "Enter news title: "; cin >> new_content.title;
+    cout << "Enter image file name: "; cin >> img_name;
+    new_content.media_path = "../images/news/" + img_name;
+    cout << "Enter content: "; cin >> new_content.content;
+    cout << "Source: 1.微博 2.抖音  3.Bilibili 4.Other" << endl; 
+    cout << "Enter number: "; cin >> num;
+    switch (num) {
+    case 1:
+        new_content.source = "蒲熠星微博";
+        new_content.source_link = "https://m.weibo.cn/u/2882733894?luicode=10000011&lfid=1005055838726144&featurecode=n";
+        break;
+    case 2:
+        new_content.source = "蒲熠星抖音";
+        cout << "Source link: "; cin >> new_content.source_link;
+        break;
+    case 3:
+        new_content.source = "蒲熠星B站";
+        cout << "Source link: "; cin >> new_content.source_link;
+        break;
+    case 4:
+        cout << "Enter source: "; cin >> new_content.source;
+        cout << "Source link: "; cin >> new_content.source_link;
+        break;
+    }
+    return new_content;
+}
+
+int toClipboard(string s) {
+    if (!OpenClipboard(nullptr)) return 0;
+    if (!EmptyClipboard()) { CloseClipboard(); return 0; }
+
+    // Convert UTF-8 -> UTF-16
+    int wlen = MultiByteToWideChar(CP_UTF8, 0, s.c_str(), -1, nullptr, 0);
+    if (wlen <= 0) { CloseClipboard(); return 0; }
+
+    HGLOBAL hMem = GlobalAlloc(GMEM_MOVEABLE, wlen * sizeof(wchar_t));
+    if (!hMem) { CloseClipboard(); return 0; }
+
+    LPWSTR wbuf = static_cast<LPWSTR>(GlobalLock(hMem));
+    if (!wbuf) { GlobalFree(hMem); CloseClipboard(); return 0; }
+
+    MultiByteToWideChar(CP_UTF8, 0, s.c_str(), -1, wbuf, wlen);
+    GlobalUnlock(hMem);
+
+    // Ownership of hMem transfers to the clipboard on success — do NOT free it.
+    if (!SetClipboardData(CF_UNICODETEXT, hMem)) {
+        GlobalFree(hMem); // only free on failure
+        CloseClipboard();
+        return 0;
+    }
+
+    CloseClipboard();
+    return 1;}
+
+
+int news_update_img() {
+    UpdateContent new_content;
+    int flag;
+    string full_content;
+
+    new_content = gets_news_content_img();
+    full_content = 
+"            <div class='col-md-4 news-item'>\n"
+"            <h3>" + new_content.title +  "</h3>\n"
+"            <span class='date'>" + new_content.date + "</span>\n"
+"            <p>" + new_content.content + "</p>\n"
+"            <div class='op-vid-con'> <img class='op-vid' src='" + new_content.media_path + "' > </div>\n"
+"            <div class='news-comments'>\n"
+"                <a href='javascript:void(0);' class='toggle-comments'>评论</a>\n"
+"                <div class='collapse'>\n"
+"                    <div class='card-body'>\n"
+"                        <p style='display: flex; align-items: center; gap: 5px; margin: 0;'>\n"
+"                            <strong>匿名用户:</strong>\n"
+"                            <span>指路：</span> <a href='" + new_content.source_link + "'>" + new_content.source + "</a>\n"
+"                        </p>\n                                      </div>\n                </div>\n            </div>\n        </div>\n";
+    cout << "Full content: " << endl;cout << full_content << endl;
+    cout << "Confirm update? 1.Yes 0.No" << endl;
+    if (conformation() == 1) {
+        toClipboard(full_content);
+        cout << "Content copy to keyboard, please paste it at news.html" << endl;
+    }
+}
+
+
+int news_update() {
+    int choice, flag;
+    flag = 1;
+
+    cout << "News update type: 1. Image news 2. Video news" << endl; cin >> choice;
+
+    while (flag == 1) {
+        switch (choice) {
+        case 1:
+            news_update_img();
+            break;
+        
+        default:
+            break;
+        }
+        cout << "Continue news update? 1.Yes 0.No" << endl;
+        flag = conformation();
+    }
+    
+}
+
 int main() {
     int flag;
 
@@ -369,10 +481,17 @@ int main() {
                 text_update();
                 flag = 0;
                 break;
-            case 3: vid_update();
+            case 3: 
+                vid_update();
+                flag = 0;
+                break;
+            case 4:
+                news_update();
+                flag = 0;
+                break;
             
             default:
-                cout <<"Invalid input." << endl;
+                cout <<"Invalid input. main" << endl;
                 break;
         }
         cout << "Continue update?" << endl;
