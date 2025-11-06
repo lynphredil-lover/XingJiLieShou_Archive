@@ -3,7 +3,7 @@
 1. [点击查看](https://raw.githack.com/lynphredil-lover/XingJiLieShou_Archive/refs/heads/main/main.html) （无需下载）
 2. 将zip file下载至本地后解压，使用浏览器打开main.html（注：每次更新后需重新下载才可观看最新版）
 
-宇宙中心八卦社合集已经在制作中了。最近三次生活太忙实在肝不动，就先上传这版吧。如果没意外的话南昌站前能制作完毕，敬请期待！<br>
+宇宙中心八卦社合集已经在制作中了。最近三次生活太忙实在肝不动，就先上传这版吧。如果没意外的话重庆站前能制作完毕，敬请期待！（咕咕咕）<br>
 如有问题可通过邮箱联络我~ 我的邮箱：leejingyj@gmail.com
 
 ### 上次更新
