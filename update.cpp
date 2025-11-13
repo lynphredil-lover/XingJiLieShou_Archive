@@ -312,9 +312,9 @@ full_content =
 "            </video> </div>\n"
 "            视频来源：<a href='" + new_content.source_link + "'>" + new_content.source + "</a>\n"
 "        </td>\n"
-"        <td> <span class='date'>" + new_content.date + "</span><br>\n" 
+"        <td class='sticky-cell'> <span class='date'>" + new_content.date + "</span><br>\n" 
 + new_content.content +
-"        </td>\n"
+"        <span class='bottom-right'> </span></td>\n"
 "      </tr>\n"
 "    </tbody>";
     cout << "Confirm update? 1.Yes 0.No" << endl;
