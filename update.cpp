@@ -118,7 +118,7 @@ int update_text_file(string file_path, UpdateContent new_content) {
         "            <img src='" + new_content.media_path + "' "
         "style='max-width:100%; max-height:100%; display:block; margin:auto;'>\n"
         "        </td>\n"
-        "        <td>" + new_content.content + "</td>\n"
+        "        <td class='sticky-cell'>" + new_content.content + "<span class='bottom-right'> </span></td>\n"
         "    </tr>\n"
         "</tbody>";
     
