@@ -1,15 +1,17 @@
 # 星际猎手档案
 ### 查看方式：
 1. [点击查看](https://raw.githack.com/lynphredil-lover/XingJiLieShou_Archive/refs/heads/main/main.html) （无需下载）
-2. 将zip file下载至本地后解压，使用浏览器打开main.html（注：每次更新后需重新下载才可观看最新版）
+2. 点击 Code （绿色按钮）-> Download ZIP 将zip file下载至本地后解压，打开文件夹html, 使用浏览器打开news.html（注：每次更新后需重新下载才可观看最新版）
 
-宇宙中心八卦社合集已经在制作中了。最近三次生活太忙实在肝不动，就先上传这版吧。如果没意外的话重庆站前能制作完毕，敬请期待！（咕咕咕 在做着了）<br>
+宇宙中心八卦社合集已制作!<br>
+点击跳转[宇宙中心八卦社](https://github.com/lynphredil-lover/cosmic-center-society) (也可在网页内跳转) <br>
 如有问题可通过邮箱联络我或者在各个平台私信我也行~ 我的邮箱：leejingyj@gmail.com
 
 ### 上次更新
-更新时间：2025.11.23 <br>
+更新时间：2025.12.08 <br>
 更新内容：<br>
-1. 微博小作文（斯沃德麦伦）    
+1. 网页排版（尽量适配手机和电脑）  
+
 
 ### 资料来源
 - [蒲熠星微博](https://m.weibo.cn/u/2882733894?luicode=10000011&lfid=1005055838726144&featurecode=n)
