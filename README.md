@@ -1,4 +1,7 @@
 # 星际猎手档案
+
+1月8至1月15间暂停更新，1月16恢复~
+
 ### 查看方式：
 1. [点击查看](https://raw.githack.com/lynphredil-lover/XingJiLieShou_Archive/refs/heads/main/main.html) （无需下载）
 2. 点击 Code （绿色按钮）-> Download ZIP 将zip file下载至本地后解压，打开文件夹html, 使用浏览器打开news.html（注：每次更新后需重新下载才可观看最新版）
@@ -8,7 +11,7 @@
 如有问题可通过邮箱联络我或者在各个平台私信我也行~ 我的邮箱：leejingyj@gmail.com
 
 ### 上次更新
-更新时间：2025.12.23 <br>
+更新时间：2025.12.25 <br>
 更新内容：<br>
 1. 微博小作文 （铃兰）
 2. 工作室抖音视频 （铃兰）
