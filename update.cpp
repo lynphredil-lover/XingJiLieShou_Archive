@@ -69,6 +69,7 @@ struct UpdateContent
     string source;
     string source_link;
     string title;
+    string encore_song;
 };
 
 UpdateContent get_text_content(){
@@ -256,6 +257,7 @@ int update_op_file(string character, UpdateContent new_content) {
         "            <div class=\"op-vid-con\"> <video class=\"op-vid\" controls>\n"
         "                <source src='" + new_content.media_path + "' type='video/mp4'> Your browser does not support the video tag."
         "            </video> </div>\n"
+        "<div style='text-align: center;'>安可曲：《" + new_content.encore_song + "》 </div>\n"
         "            视频来源：<a href='" + new_content.source_link + "'>" + new_content.source + "</a>\n"
         "        </td> </tr>\n"
         "    </tbody>\n";
@@ -288,7 +290,11 @@ int op_update() {
         cout << character << endl;
 
         new_content = get_vid_content();
-        cout << new_content.date << endl << new_content.venue << endl << new_content.media_path << endl << new_content.source << new_content.source_link << endl;
+
+        cout << "Enter the encore song name: ";
+        cin >> new_content.encore_song;
+
+        cout << new_content.date << endl << new_content.venue << endl << new_content.media_path << endl << new_content.source << new_content.source_link << endl << new_content.encore_song << endl;
 
         update_op_file(character, new_content);
 
