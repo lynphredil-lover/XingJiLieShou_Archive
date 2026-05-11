@@ -1,4 +1,6 @@
 # 星际猎手档案
+来自OC妈的官方介绍：[跳转小红书](http://xhslink.com/o/AdlqYhbk8aT)
+（既然阿蒲知道他的OC文有3万+字，是不是有点说法？该不会设定集或者合集在筹备中了吧）
 
 ### 查看方式：
 1. [点击查看](https://raw.githack.com/lynphredil-lover/XingJiLieShou_Archive/refs/heads/main/main.html) （无需下载）
@@ -12,6 +14,8 @@
 更新时间：2026.05.11 <br>
 更新内容：<br>
 1. 赛博恩和谶的故事（微博）
+
+
 
 
 ### 资料来源
