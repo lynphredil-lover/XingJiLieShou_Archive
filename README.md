@@ -1,21 +1,22 @@
 # 星际猎手档案
 来自OC妈的官方介绍：[跳转小红书](http://xhslink.com/o/AdlqYhbk8aT)
-（既然阿蒲知道他的OC文有3万+字，是不是有点说法？该不会设定集或者合集在筹备中了吧）
+
 
 ### 查看方式：
-1. [点击查看](https://raw.githack.com/lynphredil-lover/XingJiLieShou_Archive/refs/heads/main/main.html) （无需下载）
-2. 点击 Code （绿色按钮）-> Download ZIP 将zip file下载至本地后解压，打开文件夹html, 使用浏览器打开news.html（注：每次更新后需重新下载才可观看最新版）
-
-宇宙中心八卦社合集已制作完成!<br>
-点击跳转[宇宙中心八卦社](https://github.com/lynphredil-lover/cosmic-center-society) (也可在网页内跳转) <br>
-如有问题可通过邮箱联络我或者在各个平台私信我也行~ 我的邮箱：leejingyj@gmail.com
+1. [点击查看](https://lynphredil-lover.github.io/XingJiLieShou_Archive/index.html) （无需下载）
+2. [点击查看（仅当1加载失败时才点击）](https://raw.githack.com/lynphredil-lover/XingJiLieShou_Archive/refs/heads/main/index.html) （无需下载）
+3. 点击 Code （绿色按钮）-> Download ZIP 将zip file下载至本地后解压，打开文件夹html, 使用浏览器打开news.html（注：每次更新后需重新下载才可观看最新版）
 
 ### 上次更新
-更新时间：2026.05.11 <br>
+更新时间：2026.07.07 <br>
 更新内容：<br>
-1. 赛博恩和谶的故事（微博）
+1. 烬行和铃弗瑞迪尔的故事（微博）
+2. 烬行和铃弗瑞迪尔的视频（抖音）
 
 
+宇宙中心八卦社合集已制作完成!<br>
+点击跳转[宇宙中心八卦社](https://lynphredil-lover.github.io/cosmic-center-society/news.html) (也可在网页内跳转) <br>
+如有问题可通过邮箱联络我或者在各个平台私信我也行~ 我的邮箱：leejingyj@gmail.com
 
 
 ### 资料来源
@@ -28,4 +29,3 @@
 ### 特别感谢
 感谢[啊噗的记忆盒子](https://m.weibo.cn/u/7018704338) 提供不可见的照片与文案 <br>
 感谢[瑶瑶的全图鉴计划](https://www.xiaohongshu.com/user/profile/682874ab0000000008015aca?xsec_token=YBOcME4LxVE7Iuj0inh_AcQ2Fz4mw_P76sGs6QQLmP4NY%3D&xsec_source=app_share&xhsshare=CopyLink&appuid=6374e6af000000001f018fab&apptime=1756194792&share_id=29615fba31b64313b9c3ba5bc09b70ea&share_channel=copy_link)提供伴手礼照片 <br>
-感谢[Wanderer](https://www.xiaohongshu.com/user/profile/6737faff000000001c019adf?xsec_token=YB6gFcJ1NhmLogJKuCJl_GiEsfzfd8_3Qsmhgr9o3eziU%3D&xsec_source=app_share&xhsshare=CopyLink&appuid=6374e6af000000001f018fab&apptime=1756374805&share_id=7e88c677ad6b4ce58b345f664383b99f&share_channel=copy_link)提供的星际猎手真人版海报

@@ -172,7 +172,7 @@ int text_update()
 
         update_text_file(file_path, new_content);
 
-        cout << "Continue update for " << file_path << "?" << endl;
+        cout << endl << "Continue update for " << file_path << "?" << endl;
         flag = conformation();
     }
 }
@@ -262,7 +262,7 @@ int update_op_file(string character, UpdateContent new_content) {
         "        </td> </tr>\n"
         "    </tbody>\n";
 
-        cout << "Confirm update? 1.Yes 0.No" << endl;
+        cout << endl << "Confirm update? 1.Yes 0.No" << endl;
     if (conformation() == 1) {
         outfile.open(file_path, ios::app);
         if (!outfile) {
@@ -298,7 +298,7 @@ int op_update() {
 
         update_op_file(character, new_content);
 
-        cout << "Continue update for " << character << " opening file?" << endl;
+        cout << endl << "Continue update for " << character << " opening file?" << endl;
         flag = conformation();
     }
 }
@@ -323,7 +323,7 @@ full_content =
 "        <span class='bottom-right'> </span></td>\n"
 "      </tr>\n"
 "    </tbody>";
-    cout << "Confirm update? 1.Yes 0.No" << endl;
+    cout << endl << "Confirm update? 1.Yes 0.No" << endl;
     if (conformation() == 1) {
         outfile.open(file_path, ios::app);
         if (!outfile) {
@@ -355,7 +355,7 @@ int vid_update() {
 
         update_vid_file(character, new_content);
 
-        cout << "Continue update for " << character << " video file?" << endl;
+        cout << endl << "Continue update for " << character << " video file?" << endl;
         flag = conformation();
     }
 
