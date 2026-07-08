@@ -15,7 +15,7 @@
 
 
 宇宙中心八卦社合集已制作完成!<br>
-点击跳转[宇宙中心八卦社](https://lynphredil-lover.github.io/cosmic-center-society/news.html) (也可在网页内跳转) <br>
+点击跳转[宇宙中心八卦社](https://lynphredil-lover.github.io/cosmic-center-society/index.html) (也可在网页内跳转) <br>
 如有问题可通过邮箱联络我或者在各个平台私信我也行~ 我的邮箱：leejingyj@gmail.com
 
 
