@@ -92,3 +92,34 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
+
+function toggleThreadNotes(button) {
+  const notesBox = button.closest(".thread-notes");
+  const panel = notesBox.querySelector(".thread-notes-panel");
+  const arrow = notesBox.querySelector(".thread-notes-arrow");
+
+  panel.classList.toggle("show");
+
+  if (panel.classList.contains("show")) {
+    arrow.textContent = "▲";
+  } else {
+    arrow.textContent = "▼";
+  }
+}
+
+function showThreadNote(button, index) {
+  const notesBox = button.closest(".thread-notes");
+  const contentBox = notesBox.querySelector(".thread-notes-content");
+  const dataItems = notesBox.querySelectorAll(".thread-notes-data div");
+  const options = notesBox.querySelectorAll(".thread-notes-option");
+
+  if (dataItems[index]) {
+    contentBox.innerHTML = dataItems[index].innerHTML;
+  }
+
+  options.forEach(function(option) {
+    option.classList.remove("active");
+  });
+
+  button.classList.add("active");
+}

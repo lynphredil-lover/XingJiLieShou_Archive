@@ -166,3 +166,74 @@
   padding: 10px;
   line-height: 1.6;
 }
+
+/* Thread Notes dropdown */
+.thread-notes {
+  margin-top: 16px;
+  width: 100%;
+}
+
+.thread-notes-title {
+  width: 100%;
+  background-color: #f0c4d5;
+  color: #872349;
+  border: 1px solid #872349;
+  border-radius: 8px;
+  padding: 10px 14px;
+  font-weight: bold;
+  text-align: left;
+  cursor: pointer;
+}
+
+.thread-notes-title:hover {
+  background-color: #eab3c9;
+}
+
+.thread-notes-arrow {
+  float: right;
+}
+
+.thread-notes-panel {
+  display: none;
+  margin-top: 10px;
+  border: 1px solid #872349;
+  border-radius: 8px;
+  padding: 10px;
+  background-color: #fff7fa;
+}
+
+.thread-notes-panel.show {
+  display: block;
+}
+
+.thread-notes-menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.thread-notes-option {
+  width: auto;
+  height: auto;
+  background-color: #ffffff;
+  color: #872349;
+  border: 1px solid #872349;
+  border-radius: 6px;
+  padding: 6px 12px;
+  cursor: pointer;
+}
+
+.thread-notes-option:hover,
+.thread-notes-option.active {
+  background-color: #f0c4d5;
+  font-weight: bold;
+}
+
+.thread-notes-content {
+  color: #000000;
+  background-color: #ffffff;
+  /* border-left: 4px solid #872349; */
+  padding: 10px 12px;
+  line-height: 1.7;
+}

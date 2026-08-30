@@ -72,6 +72,13 @@ struct UpdateContent
     string encore_song;
 };
 
+struct ColourInfo
+{
+    string title_bgdark;
+    string title_bglight;
+    string word;
+};
+
 UpdateContent get_text_content(){
     UpdateContent new_content;
     string img_name;
@@ -138,20 +145,51 @@ int update_text_file(string file_path, UpdateContent new_content) {
     
 }
 
-string get_colour(string character) {
+struct ColourInfo get_colour(string character) {
+    ColourInfo info;
     string  colour;
 
-    if (character == "JinXing") colour = "#bbbef2";
-    else if (character == "LingLan") colour = "#ADF0DB";
-    else if (character == "SwordMelon") colour = "#ecb898";
-    else if (character == "Chen") colour = "#f0c4d5";
-    else if (character == "DoYi") colour = "#fbe6a2";
-    else if (character == "TaTa") colour = "#a8e1f0";
-    else if (character == "Cyborn") colour = "#b3bfbf";
-    else if (character == "Unknown1") colour = "#bce6ee";
-    else if (character == "Unknown2") colour = "#bee5f0";
-
-    return colour;
+    if (character == "JinXing") {
+        info.title_bgdark = "#bbbef2";
+        info.title_bglight = "#d0d8f0";
+        info.word = "#101747";
+    }
+    else if (character == "LingLan") {
+        info.title_bgdark = "#ADF0DB";
+        info.title_bglight = "#c8f0e6";
+        info.word = "#101747";
+    }
+    else if (character == "SwordMelon") {
+        info.title_bgdark = "#ecb898";
+        info.title_bglight = "#f0d0c0";
+        info.word = "#101747";
+    }
+    else if (character == "Chen") {
+        info.title_bgdark = "#eab3c9";
+        info.title_bglight = "#fff7fa";
+        info.word  = "#872349";
+    }
+    else if (character == "DoYi") {
+        info.title_bgdark = "#fbe6a2";
+        info.title_bglight = "#fdf0c0";
+        info.word = "#101747";
+    }
+    else if (character == "TaTa") {
+        info.title_bgdark = "#a8e1f0";
+        info.title_bglight = "#c0eaf5";
+        info.word = "#101747";
+    }
+    else if (character == "Cyborn") {
+        info.title_bgdark = "#b3bfbf";
+        info.title_bglight = "#d0d0d0";
+        info.word = "#101747";
+    }
+    else if (character == "Unknown1") {
+        info.title_bgdark = "#bce6ee";
+        info.title_bglight = "#d0f0f5";
+        info.word = "#101747";
+    }
+    return info;
 }
 
 int text_update()
@@ -242,13 +280,14 @@ int update_op_file(string character, UpdateContent new_content) {
     string full_content;
     ofstream outfile;
     string file_path, colour;
+    struct ColourInfo info;
 
     file_path = "html/" + character + "_op.html";
-    colour = get_colour(character);
+    info = get_colour(character);
 
     full_content =
         "    <thead>\n"
-        "        <tr style=\"background-color: " + colour + "\">\n"
+        "        <tr style=\"background-color: " + info.title_bgdark + "\">\n"
         "            <th>" + new_content.date + "<br>" + new_content.venue + "</th>\n"
         "        </tr>\n"
         "    </thead>\n"
